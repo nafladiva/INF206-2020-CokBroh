@@ -3,19 +3,21 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-
+        <div class="col-md-6">
+            <div class="card mt-3 card-login">
                 <div class="card-body">
+                    <div class="text-center m-4">
+                        <h1 class="h1-login">{{ __('Login') }}</h1>
+                    </div>
+                    
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                        <div class="form-group row justify-content-center">
+                            <label for="email" class="col-10 col-md-4 col-lg-10 col-form-label text-md-left text-lg-left">{{ __('E-Mail Address') }}</label>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                            <div class="col-10 col-md-10">
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror input-email-login" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -25,11 +27,11 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                        <div class="form-group row justify-content-center">
+                            <label for="password" class="col-10 col-md-4 col-lg-10 col-form-label text-md-left text-lg-left">{{ __('Password') }}</label>
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                            <div class="col-10 col-md-10">
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror input-pass-login" name="password" required autocomplete="current-password">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -39,9 +41,9 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
+                        <div class="form-group row justify-content-center">
+                            <div class="col-md-10">
+                                <div class="form-check just">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                     <label class="form-check-label" for="remember">
@@ -51,9 +53,9 @@
                             </div>
                         </div>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                        <div class="form-group row justify-content-center mb-5">
+                            <div class="col-md-10">
+                                <button type="submit" class="btn btn-primary btn-login">
                                     {{ __('Login') }}
                                 </button>
 
