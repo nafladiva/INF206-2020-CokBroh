@@ -1,0 +1,48 @@
+@media(max-width: 720px){
+	#card{
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+}
+
+.jumbotron{
+	background-image: url(../img/bg.jpg);
+	height: 100vh;
+	background-size: 	cover;
+}
+
+.jumbotron .landing{
+	margin-top: 3rem;
+	text-align: center;
+	color: white;
+}
+
+img.logo{
+	border-radius: 50%;
+	width: 150px;
+}
+
+.landing .nama {
+	font-size: 4.5rem;
+	font-weight: 600;
+	margin-top: 0px;
+	line-height: 5rem;
+}
+
+.landing .btn{
+	width: 10rem	;
+}
+
+.jumbotron hr{
+	border-color: #ffc107;
+	width: 8rem;
+	border-width: 3px;
+}
+a.navbar-brand{
+	font-size: 1.5rem;
+}
+
+.navbar{
+	/*margin-top: 2rem;*/
+	height: 3.7rem;
+}
