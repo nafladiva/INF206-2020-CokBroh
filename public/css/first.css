@@ -48,7 +48,7 @@ a.navbar-brand {
     height: 4rem;
 }
 
-@media(max-height: 667px) {
+@media(max-width: 375px) {
     .navbar {
         margin-top: -7px;
     }
