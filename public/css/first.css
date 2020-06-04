@@ -1,48 +1,55 @@
-@media(max-width: 720px){
-	#card{
-		padding-right: 30px;
-		padding-left: 30px;
-	}
+@media(max-width: 720px) {
+    #card {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
 }
 
-.jumbotron{
-	background-image: url(../img/bg.jpg);
-	height: 100vh;
-	background-size: 	cover;
+.jumbotron {
+    background-image: url(../img/bg.jpg);
+    height: 100vh;
+    background-size: cover;
 }
 
-.jumbotron .landing{
-	margin-top: 3rem;
-	text-align: center;
-	color: white;
+.jumbotron .landing {
+    margin-top: 3.1rem;
+    text-align: center;
+    color: white;
 }
 
-img.logo{
-	border-radius: 50%;
-	width: 150px;
+img.logo {
+    border-radius: 50%;
+    width: 150px;
 }
 
 .landing .nama {
-	font-size: 4.5rem;
-	font-weight: 600;
-	margin-top: 0px;
-	line-height: 5rem;
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin-top: 0px;
+    line-height: 5rem;
 }
 
-.landing .btn{
-	width: 10rem	;
+.landing .btn {
+    width: 10rem;
 }
 
-.jumbotron hr{
-	border-color: #ffc107;
-	width: 8rem;
-	border-width: 3px;
-}
-a.navbar-brand{
-	font-size: 1.5rem;
+.jumbotron hr {
+    border-color: #ffc107;
+    width: 8rem;
+    border-width: 3px;
 }
 
-.navbar{
-	/*margin-top: 2rem;*/
-	height: 3.7rem;
+a.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar {
+    /*margin-top: 2rem;*/
+    height: 4rem;
+}
+
+@media(max-height: 667px) {
+    .navbar {
+        margin-top: -7px;
+    }
 }
