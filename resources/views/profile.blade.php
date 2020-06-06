@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="m-4 text-center">
-        <img src="https://f0.pngfuel.com/png/178/595/black-profile-icon-illustration-user-profile-computer-icons-login-user-avatars-png-clip-art.png" class="rounded-circle" alt="foto" style="max-width: 200px;">
+        <img src="https://cdn1.iconfinder.com/data/icons/technology-devices-2/100/Profile-512.png" class="rounded-circle" alt="foto" style="max-width: 200px;">
     </div>
     <div class="text-center">
         <h1 style="font-weight: bold;">Desintha Zahara Azmi</h1>
@@ -22,7 +22,10 @@
         </div>
 
         <div class="text-center mt-3">
-            <a href="#" class="btn btn-primary">Lihat Kupon Anda</a>
+            <a href="/kuponku" class="btn btn-primary">Lihat Kupon Anda</a>
+        </div>
+        <div class="text-center mt-3">
+            <a href="/daftarkupon" class="btn btn-primary">Cari Kupon</a>
         </div>
     </div>
 </div>

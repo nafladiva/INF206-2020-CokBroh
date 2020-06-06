@@ -51,12 +51,21 @@
             </div>
             
             <ul class="navbar-nav ml-lg-auto">
+                <li class="nav-item active">
+                        <a class="nav-link" href="{{url('home')}}" >Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{url('Howto')}}" >How To</a>
+                </li>
+                <li class="nav-item active">
+                        <a class="nav-link" href="{{url('about')}}" >About</a>
+                </li>
                     <!-- Authentication Links -->
                         @guest
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                    {{ Auth::user()->nama_depan }} <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -72,15 +81,6 @@
                                 </div>
                             </li>
                         @endguest
-                <li class="nav-item active">
-                        <a class="nav-link" href="{{url('home')}}" >Home</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{url('Howto')}}" >How To</a>
-                </li>
-                <li class="nav-item active">
-                        <a class="nav-link" href="{{url('about')}}" >About</a>
-                </li>
             </ul>
         </div>
         </div>
