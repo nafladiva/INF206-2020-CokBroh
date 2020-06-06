@@ -14,7 +14,7 @@ class CreateKuponTable extends Migration
     public function up()
     {
         Schema::create('kupon', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('nama');
             $table->date('berlaku_sampai');
             $table->text('deskripsi');
