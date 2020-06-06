@@ -20,6 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/home', 'HomeController@index');
 
-Route::get('/profile', function() {
-    return view('profile');
+Route::get('/profile', 'ProfileController@index');
+Route::get('/kuponku', 'ProfileController@kupon');
+Route::get('/daftarkupon', function () {
+    return view('daftarKupon');
 });

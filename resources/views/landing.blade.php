@@ -14,7 +14,7 @@
       <i class="fa fa-unlock mr-2"></i>
       ADMIN
     </a>
-    <a class="btn btn-warning btn-lg m-2" href="{{ url('/pengunjung') }}" role="button"><i class="fa fa-trash mr-2"></i>PENGUNJUNG</a>
+    <a class="btn btn-warning btn-lg m-2" href="{{ route('login') }}" role="button"><i class="fa fa-trash mr-2"></i>PENGUNJUNG</a>
   </p>
 </div>
 @endsection
