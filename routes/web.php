@@ -14,7 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('landing');
+    return view('home');
+});
+
+Route::get('/data-kupon', function () {
+    return view('data-kupon');
+});
+
+Route::get('/data-user', function () {
+    return view('data-user');
 });
 
 Auth::routes();

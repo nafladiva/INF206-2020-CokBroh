@@ -1,6 +1,6 @@
 @extends('layouts.first')
 
-@section('title', 'Beranda - Whisper')
+@section('title', 'Beranda - Cokbroh')
 
 @section('content')
   <div class="container landing">
@@ -11,7 +11,7 @@
   <p>Kumpulkan sampahnya, dapatkan hadiahnya !!!</p>
   <p class="lead">
     <a class="btn btn-warning btn-lg" href="{{ route('login') }}" role="button"><i class="fas fa-user-cog mr-2"></i>ADMIN</a>
-    <a class="btn btn-warning btn-lg" href="{{ url('/pengunjung') }}" role="button"><i class="fas fa-trash mr-2"></i>PENGUNJUNG</a>
+    <a class="btn btn-warning btn-lg" href="{{ url('/login') }}" role="button"><i class="fas fa-trash mr-2"></i>PENGUNJUNG</a>
   </p>
 </div>
 @endsection
