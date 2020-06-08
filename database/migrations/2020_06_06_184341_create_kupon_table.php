@@ -19,6 +19,7 @@ class CreateKuponTable extends Migration
             $table->date('berlaku_sampai');
             $table->integer('jumlah_poin');
             $table->text('deskripsi');
+            $table->integer('jumlah');
             $table->binary('gambar');
             $table->timestamps();
         });

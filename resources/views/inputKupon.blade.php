@@ -62,6 +62,20 @@
             </div>
         </div>
 
+        <div class="form-group row justify-content-center">
+            <label for="jumlah" class="col-10 col-md-4 col-lg-10 col-form-label text-md-left text-lg-left">{{ __('Jumlah Kupon') }}</label>
+
+            <div class="col-10 col-md-10">
+                <input id="jumlah" type="text" class="form-control @error('password') is-invalid @enderror input-pass-login" name="jumlah" required>
+
+                @error('jumlah')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+            </div>
+        </div>
+
         <div class="form-group">
             <div class="row">
                 <label class="col-10 col-md-4 col-lg-10 col-form-label text-md-left">{{ __('Gambar Kupon') }}</label>

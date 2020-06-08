@@ -8,5 +8,5 @@ class Kupon extends Model
 {
     public $table = "kupon";
     
-    protected $fillable = ['nama', 'berlaku_sampai', 'jumlah_poin', 'deskripsi', 'gambar'];
+    protected $fillable = ['nama', 'berlaku_sampai', 'jumlah_poin', 'deskripsi', 'jumlah', 'gambar'];
 }

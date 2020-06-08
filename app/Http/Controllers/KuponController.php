@@ -33,6 +33,7 @@ class KuponController extends Controller
         'berlaku_sampai'  => $request->berlaku_sampai,
         'jumlah_poin'  => $request->jumlah_poin,
         'deskripsi'  => $request->deskripsi,
+        'jumlah'  => $request->jumlah,
         'gambar' => $image
         );
 
@@ -64,6 +65,8 @@ class KuponController extends Controller
         } else {
 
             DB::table('users')->where('id', $id_user)->decrement('poin', $poin_kupon);
+
+            DB::table('kupon')->where('id', $id_kupon)->decrement('jumlah', 1);
             
             DB::table('kupon_user')->insert([
                 'id_user' => $id_user,

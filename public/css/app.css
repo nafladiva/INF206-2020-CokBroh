@@ -10997,3 +10997,14 @@ a.text-dark:focus {
     border: 2px solid rgb(8, 151, 8);
     border-radius: 20px;
 }
+
+.btn-profile {
+    border-radius: 20px;
+    background-color: rgb(8, 151, 8);
+    border: 3px solid rgb(8, 151, 8);
+}
+
+.h1-kupon {
+    font-size: 30px;
+    font-weight: bold;
+}
