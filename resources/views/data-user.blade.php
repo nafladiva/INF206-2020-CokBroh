@@ -7,74 +7,43 @@
 @endsection
 
 @section('content')
-<div id="page-wrapper">
-
-    <div class="container-fluid">
-        <!-- .row -->
-        <div class="row ml-10">
-
-        <!-- .col lg 12 -->
-            <div class="col-lg-15 mt-10 ">
-
-            <!-- panel . (Pelajari cara membuat panel di bootstrap yah)-->
-                <div class="panel panel-default">
-
-                <!-- panel heading -->
-                    <div class="panel-heading">
-                    <div class="col-lg-6">
-                    <a href="input_produk.php" title="Input data"><button name="input" class="btn btn-primary"><i class="fa fa-plus-square-o fa-fw"></i> Input</button></a>
-                    </div>
-                    <div class="col-lg-6">
-                    <!-- form pencarian produk -->
-                    <form action="cari_produk.php" method="get" class="form-inline text-right">
-                    <input type="text" class="form-control" name="qw" placeholder="Cari Produk" required>
-                    <button type="submit" class="btn btn-primary">Cari</button>
-                    </form>
-                    <!-- form pencarian produk -->
-                    </div>
-                    <div style="clear:both;"></div>
-                    </div>
-                <!-- /.panel heading -->
-
-                <!-- panel body -->
-                    <div class="panel-body">
-
-                    <!-- /.tabel responsive -->
-                        <div class="table-responsive">
-                            <table class="table table-bordered table-hover table-striped">
-                                <thead>
-                                    <tr>
-                                        <th scope="col" style="width: 10%;">No</th>
-                                        <th scope="col" style="width: 20%;"> Nama User</th>
-                                        <th scope="col" style="width: 35%;">Jumlah Kupon</th>
-                                        <th scope="col" style="width: 20%;"> Jumlah Poin</th>
-                                        <th scope="col" style="width: 15%;">Aksi</th>
-                                    </tr>
-                                </thead>
-                               
-                            </table>
-                        </div>
-               
-
-                      
-                    </div>
-                    <!-- /.panel body -->
-
-                </div>
-                <!-- /.panel -->
-
+<div class="container"><br>
+<div class="row ml-0 mt-5 mr-5 shadow">
+    <div class="col-md-12 p-5 mr-5 grid-margin stretch-card">
+        <div class="col">
+            <div class="">
+            <h4 class=""> <i class="fas fa-users mr-2"></i> Data User
+                <a href="" class="btn btn-warning btn-icon-only rounded-circle mb-1" data-toggle="modal" data-target="#exampleModal">
+                    <span class="btn-inner--icon text-white"><i class="fas fa-plus"></i></span>
+                </a>
+                
+                <div class="row mt-0 mr-1">
+                    <form class="form-inline my-2 my-lg-0 ml-auto">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+    
+</h4> 
+<hr class="bg-warning mt-0">
+            <div class="row">
+            <div class="col-md">
+                <table class="table table-striped table-dark " id="tabel">
+                <thead>
+                    <tr class="bg-gradient-dark">
+                    <th scope="col" style="width: 10%;">No</th>
+                    <th scope="col" style="width: 20%;"> Nama User</th>
+                    <th scope="col" style="width: 35%;">Jumlah Kupon</th>
+                    <th scope="col" style="width: 20%;"> Jumlah Poin</th>
+                    <th scope="col" style="width: 15%;">Aksi</th>
+                    </tr>
+                </thead>
+                </table>
             </div>
-            <!-- /.col lg 12-->
-
+            </div>
         </div>
-        <!-- /.row -->
-
-
-   </div>
-    <!-- /.container-fluid -->
-
+        </div>
+    </div>
+</div>   
 </div>
-<!-- /#page-wrapper -->
-
-
-  @endsection
+@endsection

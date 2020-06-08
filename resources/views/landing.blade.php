@@ -1,10 +1,10 @@
 @extends('layouts.first')
 
-@section('title', 'Beranda - Cokbroh')
+@section('title', 'Beranda - CokBroh')
 
 @section('content')
   <div class="container landing">
-   <img src="{{asset('img/logo.png')}}" alt="logo" class="img-fluid logo">
+    <img src="{{asset('img/logo.png')}}" alt="logo" class="img-fluid logo">
   <p class="lead mb-0 mt-2">SELAMAT DATANG DI</p>
   <p class="nama">CokBroh</p>
   <hr class="my-4">

@@ -42,7 +42,7 @@
                         </div>
 
                         <div class="form-group row justify-content-center">
-                            <div class="col-md-10">
+                            <div class="col-10 col-md-10">
                                 <div class="form-check just">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
@@ -54,7 +54,7 @@
                         </div>
 
                         <div class="form-group row justify-content-center mb-5">
-                            <div class="col-md-10">
+                            <div class="col-10 col-md-10 text-right">
                                 <button type="submit" class="btn btn-primary btn-login">
                                     {{ __('Login') }}
                                 </button>
