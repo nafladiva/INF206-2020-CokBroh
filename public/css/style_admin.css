@@ -1,0 +1,23 @@
+
+.nav-link:hover {
+    background-color: white;
+}
+
+.displaly-4 {
+    font-weight: bold;
+}
+
+.navbar{
+	/*margin-top: 2rem;*/
+	height: 3.7rem;
+}
+
+.card-body-icon {
+    position: absolute;
+    z-index: 0;
+    top: 10px;
+    right: 4px;
+    opacity: 0,4;
+    font-size: 90px;
+}
+

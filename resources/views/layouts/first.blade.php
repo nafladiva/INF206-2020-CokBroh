@@ -81,6 +81,15 @@
                                 </div>
                             </li>
                         @endguest
+                <li class="nav-item active">
+                        <a class="nav-link" href="{{url('/')}}" >Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{url('Howto')}}" >How To</a>
+                </li>
+                <li class="nav-item active">
+                        <a class="nav-link" href="{{url('about')}}" >About</a>
+                </li>
             </ul>
         </div>
         </div>
