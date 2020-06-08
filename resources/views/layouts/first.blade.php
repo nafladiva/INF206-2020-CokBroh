@@ -55,10 +55,10 @@
                         <a class="nav-link" href="{{url('home')}}" >Home</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{url('Howto')}}" >How To</a>
+                    <a class="nav-link" href="/howto" >How To</a>
                 </li>
                 <li class="nav-item active">
-                        <a class="nav-link" href="{{url('about')}}" >About</a>
+                        <a class="nav-link" href="/about" >About</a>
                 </li>
                     <!-- Authentication Links -->
                         @guest
