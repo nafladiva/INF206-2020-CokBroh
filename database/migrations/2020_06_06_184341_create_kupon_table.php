@@ -17,8 +17,10 @@ class CreateKuponTable extends Migration
             $table->increments('id');
             $table->string('nama');
             $table->date('berlaku_sampai');
+            $table->integer('jumlah_poin');
             $table->text('deskripsi');
             $table->binary('gambar');
+            $table->timestamps();
         });
     }
 

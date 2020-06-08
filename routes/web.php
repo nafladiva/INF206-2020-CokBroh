@@ -21,7 +21,13 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::get('/profile', 'ProfileController@index');
-Route::get('/kuponku', 'ProfileController@kupon');
-Route::get('/daftarkupon', function () {
-    return view('daftarKupon');
+Route::get('/kuponku', 'ProfileController@kupon')->name('kuponku');
+Route::get('/inputkupon', function () {
+    return view('inputKupon');
 });
+Route::post('/inputkupon/go', 'KuponController@insert_image');
+
+Route::get('/daftarkupon', 'KuponController@index');
+
+Route::get('/store_image/fetch_image/{id}', 'KuponController@fetch_image');
+Route::post('/ambilkupon/{id_user}/{id_kupon}', 'KuponController@ambil_kupon');
