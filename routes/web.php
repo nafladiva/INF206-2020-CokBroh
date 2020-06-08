@@ -25,3 +25,7 @@ Route::get('/kuponku', 'ProfileController@kupon');
 Route::get('/daftarkupon', function () {
     return view('daftarKupon');
 });
+
+Route::get('/about', function () {
+    return view('about');
+});
