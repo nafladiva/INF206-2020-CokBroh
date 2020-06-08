@@ -1,0 +1,47 @@
+@media(max-width: 720px){
+	#kolom{
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.display-2{
+	font-weight: bold;
+	line-height: 2rem;
+	position: relative;
+	z-index: 1;
+}
+
+.card-body-icon{
+	position: absolute;
+	z-index: 0;
+	top: 25px;
+	right: 4px;
+	opacity: 0.4;
+	font-size: 100px;
+	color: white;
+}
+
+#tabel td{
+	padding: 10px 0 10px 10px;
+}
+
+#tabel th, #tabel ul{
+	padding-left: 10px;
+}
+
+{
+	padding-left: 0px;
+}
+
+.meja{
+	width: 100%;
+	border-radius: 15px;
+	height: 125px;
+}
+
+#tabel img{
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+}

@@ -17,10 +17,23 @@ Route::get('/', function () {
     return view('landing');
 });
 
+Route::get('/data-kupon', function () {
+    return view('data-kupon');
+});
+
+Route::get('/data-user', function () {
+    return view('data-user');
+});
+
+Route::get('/login-admin', function () {
+    return view('login-admin');
+});
+
 Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::get('/profile', 'ProfileController@index');
+
 Route::get('/kuponku', 'ProfileController@kupon')->name('kuponku');
 Route::get('/inputkupon', function () {
     return view('inputKupon');
@@ -31,3 +44,7 @@ Route::get('/daftarkupon', 'KuponController@index');
 
 Route::get('/store_image/fetch_image/{id}', 'KuponController@fetch_image');
 Route::post('/ambilkupon/{id_user}/{id_kupon}', 'KuponController@ambil_kupon');
+
+Route::get('/howto', 'LandingController@howto');
+Route::get('/about', 'LandingController@about');
+
