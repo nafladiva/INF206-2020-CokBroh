@@ -38,7 +38,7 @@
                     <div class="col-6 collapse-brand">
                         <a href="javascript:void(0)">
                             <!-- <img src="../../assets/img/brand/blue.png"> -->
-                              CokBroh
+                            CokBroh
                         </a>
                     </div>
                     <div class="col-6 collapse-close">
