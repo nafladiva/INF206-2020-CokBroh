@@ -7,6 +7,7 @@
     </div>
     <div class="text-center">
         <h1 style="font-weight: bold;">{{Auth::user()->nama_depan . ' ' . Auth::user()->nama_belakang}}</h1>
+        <p>{{Auth::user()->alamat}}</p>
     </div>
 
     <div class="container mt-3">
@@ -22,10 +23,10 @@
         </div>
 
         <div class="text-center mt-3">
-            <a href="/kuponku" class="btn btn-primary">Lihat Kupon Anda</a>
+            <a href="/kuponku" class="btn btn-primary btn-profile">Lihat Kupon Anda</a>
         </div>
         <div class="text-center mt-3">
-            <a href="/daftarkupon" class="btn btn-primary">Cari Kupon</a>
+            <a href="/daftarkupon" class="btn btn-primary btn-profile">Tambah Kupon</a>
         </div>
     </div>
 </div>

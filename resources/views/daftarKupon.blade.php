@@ -2,50 +2,34 @@
 
 @section('content')
 <div class="container">
+    @if (session('alert'))
+        <div class="alert alert-danger">
+            {{ session('alert') }}
+        </div>
+    @endif
+    <div class="text-center m-4">
+        <h1 class="h1-kupon">{{ __('Kupon yang tersedia') }}</h1>
+        <p>Ayo borong kuponnya sebelum kehabisan!</p>
+    </div>
+    <a href="/inputkupon" class="btn btn-primary">Input kupon</a>
     <div class="row justify-content-center">
+    @foreach($data as $d)
+        @if($d->jumlah > 0)
         <div class="card col-10 col-sm-8 col-md-6 col-lg-4 col-xl-3 m-2" style="width: 18rem;">
-            <img class="card-img-top" src="{{asset('img/kupon1.jpeg')}}" alt="Gambar kupon">
+            <img class="card-img-top" src="/store_image/fetch_image/{{$d->id}}" alt="Gambar kupon">
             <div class="card-body">
-                <h5 class="card-title text-center">Kupon Belanja Rp25.000</h5>
+                <h5 class="card-title text-center" style="font-weight: bold;">{{$d->nama}}</h5>
                 <div class="row justify-content-between">
-                    <p>Sisa: 5</p>
-                    <a href="#" class="btn btn-primary">Ambil</a>
+                    <p>Jumlah poin : {{$d->jumlah_poin}}</p>
+                    <form method="POST" action="/ambilkupon/{{Auth::user()->id}}/{{$d->id}}">
+                    @csrf
+                        <button type="submit" class="btn btn-primary">Ambil</button>
+                    </form>
                 </div>
             </div>
         </div>
-
-        <div class="card col-10 col-sm-8 col-md-6 col-lg-4 col-xl-3 m-2" style="width: 18rem;">
-            <img class="card-img-top" src="{{asset('img/kupon5.jpeg')}}" alt="Gambar kupon" style="max-height: 200px;">
-            <div class="card-body">
-                <h5 class="card-title text-center">Voucher Belanja Kusen</h5>
-                <div class="row justify-content-between">
-                    <p>Sisa: 5</p>
-                    <a href="#" class="btn btn-primary">Ambil</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card col-10 col-sm-8 col-md-6 col-lg-4 col-xl-3 m-2" style="width: 18rem;">
-            <img class="card-img-top" src="{{asset('img/kupon3.jpeg')}}" alt="Gambar kupon" style="max-height: 200px;">
-            <div class="card-body">
-                <h5 class="card-title text-center">Shopback Gratis Rp.45.000</h5>
-                <div class="row justify-content-between">
-                    <p>Sisa: 5</p>
-                    <a href="#" class="btn btn-primary">Ambil</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card col-10 col-sm-8 col-md-6 col-lg-4 col-xl-3 m-2" style="width: 18rem;">
-            <img class="card-img-top" src="{{asset('img/kupon4.jpg')}}" alt="Gambar kupon" style="max-height: 200px;">
-            <div class="card-body">
-                <h5 class="card-title text-center">Kupon Belanja Rp50.000</h5>
-                <div class="row justify-content-between">
-                    <p>Sisa: 5</p>
-                    <a href="#" class="btn btn-primary">Ambil</a>
-                </div>
-            </div>
-        </div>
+        @endif
+    @endforeach
     </div>
 </div>
 @endsection
