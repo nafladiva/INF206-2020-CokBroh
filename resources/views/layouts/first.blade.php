@@ -38,7 +38,7 @@
                     <div class="col-6 collapse-brand">
                         <a href="javascript:void(0)">
                             <!-- <img src="../../assets/img/brand/blue.png"> -->
-                            <i class="fas fa-mug-hot"></i>   CokBroh
+                            CokBroh
                         </a>
                     </div>
                     <div class="col-6 collapse-close">
@@ -81,15 +81,7 @@
                                 </div>
                             </li>
                         @endguest
-                <li class="nav-item active">
-                        <a class="nav-link" href="{{url('/')}}" >Home</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{url('Howto')}}" >How To</a>
-                </li>
-                <li class="nav-item active">
-                        <a class="nav-link" href="{{url('about')}}" >About</a>
-                </li>
+        
             </ul>
         </div>
         </div>

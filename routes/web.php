@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('landing');
 });
 
 Route::get('/data-kupon', function () {
@@ -23,6 +23,10 @@ Route::get('/data-kupon', function () {
 
 Route::get('/data-user', function () {
     return view('data-user');
+});
+
+Route::get('/login-admin', function () {
+    return view('login-admin');
 });
 
 Auth::routes();
