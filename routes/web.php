@@ -24,10 +24,12 @@ Route::post('/postadmin', 'AdminLoginController@loginPost');
 Route::get('/data-user', 'AdminLoginController@datauser')->name('datauser');
 Route::get('/data-kupon', 'AdminLoginController@datakupon');
 
-Route::get('/cariuser', 'AdminLoginController@searchUser');
+Route::get('/inputpoin/{id}', 'KuponController@inputPoin');
+Route::post('/prosespoin/{id}', 'KuponController@buatPoin');
 
 Route::get('logoutadmin', 'AdminLoginController@logout');
 
+//User
 Auth::routes();
 Route::get('/home', 'HomeController@index');
 
@@ -44,6 +46,7 @@ Route::get('/daftarkupon', 'KuponController@index');
 Route::get('/store_image/fetch_image/{id}', 'KuponController@fetch_image');
 Route::post('/ambilkupon/{id_user}/{id_kupon}', 'KuponController@ambil_kupon');
 
+//Landing page
 Route::get('/howto', 'LandingController@howto');
 Route::get('/about', 'LandingController@about');
 

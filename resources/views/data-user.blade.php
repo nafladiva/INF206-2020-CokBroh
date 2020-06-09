@@ -47,7 +47,7 @@
                         <td>{{$d -> poin}}</td>
                         <td>{{$d -> kupon}}</td>
                         <td>
-                            <a href="" class="btn btn-primary m-1">Tambah poin</a>
+                            <a href="/inputpoin/{{$d->id}}" class="btn btn-primary m-1">Tambah poin</a>
                             <a href="" class="btn btn-primary m-1">Delete</a>
                         </td>
                     </tr>
