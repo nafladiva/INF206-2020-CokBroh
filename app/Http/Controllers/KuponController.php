@@ -79,4 +79,13 @@ class KuponController extends Controller
         }
         return redirect('/kuponku')->with('alert', 'Kupon sudah ditambah!');
     }
+
+    //Method untuk menambahkan poin
+    //data -> berat sampah, 
+    public function buatPoin(Request $data, $id_user) {
+        $berat = $data->berat;
+        $poin = $berat / 1;
+        DB::table('users')->where('id', $id_user)->increment('poin', $poin);
+        return redirect()->back();
+    }
 }

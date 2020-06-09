@@ -7,21 +7,21 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: sans-serif;
-  }
-  
-  .login {
+}
+
+.login {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.5);
     padding: 30px;
-    width: 500px;
-    height: 500px;
-    box-shadow:  0 0 10px 5px black;
-  }
-  
-  .avatar {
+    width: 400px;
+    height: 450px;
+    box-shadow: 0 0 10px 5px black;
+}
+
+.avatar {
     font-size: 50px;
     background: #bdc3c7;
     width: 50px;
@@ -34,30 +34,30 @@ body {
     transform: translate(-50%, -50%);
     border-radius: 500%;
     color: #2c3e50;
-  }
-  
-  .login h2 {
+}
+
+.login h2 {
     text-align: center;
     color: white;
     padding-top: 10px;
     letter-spacing: 5px;
-  }
-  
-  .box-login {
+}
+
+.box-login {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
     border-bottom: 2px solid white;
     padding: 10px 0;
-  }
-  
-  .box-login i {
+}
+
+.box-login i {
     font-size: 20px;
     color: white;
-  
-  }
-  
-  .box-login input {
+
+}
+
+.box-login input {
     width: 100%;
     padding: 0 10px;
     background: none;
@@ -65,13 +65,13 @@ body {
     outline: none;
     color: white;
     font-size: 18px;
-  }
-  
-  .box-login input::placeholder{
+}
+
+.box-login input::placeholder {
     color: white;
-  }
-  
-  .btn-login {
+}
+
+.btn-login {
     width: 100%;
     background: none;
     padding: 10px;
@@ -81,23 +81,24 @@ body {
     color: white;
     cursor: pointer;
     transition: 0.3s;
-  }
-  
-  .btn-login:hover {
+}
+
+.btn-login:hover {
     background: rgba(0, 0, 0, 0.8);
-  }
-  
-  .bottom {
+}
+
+.bottom {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-  }
-  .bottom a {
+}
+
+.bottom a {
     color: white;
     font-size: 14px;
     text-decoration: none;
-  }
-  
-  .bottom a:hover{
+}
+
+.bottom a:hover {
     text-decoration: underline;
-  }
+}
