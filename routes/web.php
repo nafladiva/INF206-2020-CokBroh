@@ -17,17 +17,16 @@ Route::get('/', function () {
     return view('landing');
 });
 
-Route::get('/data-kupon', function () {
-    return view('data-kupon');
-});
+//Admin
+Route::get('/login-admin', 'AdminLoginController@loginAdmin');
+Route::post('/postadmin', 'AdminLoginController@loginPost');
 
-Route::get('/data-user', function () {
-    return view('data-user');
-});
+Route::get('/data-user', 'AdminLoginController@datauser')->name('datauser');
+Route::get('/data-kupon', 'AdminLoginController@datakupon');
 
-Route::get('/login-admin', function () {
-    return view('login-admin');
-});
+Route::get('/cariuser', 'AdminLoginController@searchUser');
+
+Route::get('logoutadmin', 'AdminLoginController@logout');
 
 Auth::routes();
 Route::get('/home', 'HomeController@index');

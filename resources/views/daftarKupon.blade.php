@@ -1,5 +1,22 @@
 @extends('layouts.app')
 
+@section('style')
+<style>
+    html {
+        height: 100%;
+    }
+
+    body {
+        height: 100%;
+        margin: 0;
+        background: rgb(158,210,182);
+        background: linear-gradient(33deg, rgba(158,210,182,1) 0%, rgba(255,237,253,1) 100%);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+</style>
+@endsection
+
 @section('content')
 <div class="container">
     @if (session('alert'))
@@ -11,7 +28,7 @@
         <h1 class="h1-kupon">{{ __('Kupon yang tersedia') }}</h1>
         <p>Ayo borong kuponnya sebelum kehabisan!</p>
     </div>
-    <a href="/inputkupon" class="btn btn-primary">Input kupon</a>
+    <!-- <a href="/inputkupon" class="btn btn-primary">Input kupon</a> -->
     <div class="row justify-content-center">
     @foreach($data as $d)
         @if($d->jumlah > 0)

@@ -1,5 +1,18 @@
 @extends('layouts.app')
 
+@section('style')
+<style>
+    html {
+        height: 100%;
+    }
+
+    body {
+        background-image: url("img/vector/bg.jpg");
+        height: 100%;
+    }
+</style>
+@endsection
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

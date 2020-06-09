@@ -76,12 +76,11 @@
             </div>
         </div>
 
-        <div class="form-group">
-            <div class="row">
-                <label class="col-10 col-md-4 col-lg-10 col-form-label text-md-left">{{ __('Gambar Kupon') }}</label>
-                <div class="col-10 col-md-10">
-                    <input type="file" name="gambar" />
-                </div>
+        <div class="form-group row justify-content-center">
+            <label class="col-10 col-md-4 col-lg-10 col-form-label text-md-left text-lg-left">{{ __('Gambar Kupon') }}</label>
+            
+            <div class="col-10 col-md-10">
+                <input type="file" name="gambar" />
             </div>
         </div>
 

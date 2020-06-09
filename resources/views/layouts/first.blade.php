@@ -12,11 +12,14 @@
     <!-- My Css -->
     <!-- <link rel="stylesheet" href="{{url('assets/css/mystyle.css')}}"> -->
     <link rel="stylesheet" href="{{url('css/first.css')}}">
+    <link rel="stylesheet" href="{{asset('css/howto/animate.css')}}">
+    <link rel="stylesheet" href="{{asset('css/howto/style.css')}}">
     
     <!-- Icons -->
     <link href="{{url('assets/css/nucleo-icons.css')}}" rel="stylesheet">
     <link href="{{url('fontawesome-free/css/all.min.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 
     <!-- Argon CSS -->
     <link type="text/css" href="{{url('assets/css/argon-design-system.min.css')}}" rel="stylesheet">
@@ -52,7 +55,7 @@
             
             <ul class="navbar-nav ml-lg-auto">
                 <li class="nav-item active">
-                        <a class="nav-link" href="{{url('home')}}" >Home</a>
+                        <a class="nav-link" href="/" >Home</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="/howto" >How To</a>
@@ -69,6 +72,16 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    @if(Auth::user()->level == 'admin')
+                                        <a class="dropdown-item" href="/data-user">
+                                            {{ __('Dashboard Admin') }}
+                                        </a>
+                                    @endif
+
+                                    <a class="dropdown-item" href="/profile">
+                                            {{ __('Profile') }}
+                                        </a>
+                                    
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                                     document.getElementById('logout-form').submit();">
